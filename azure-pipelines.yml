@@ -17,8 +17,7 @@ variables:
   # Environment name
   environmentName: 'Employeeform'
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  
 
 stages:
 - stage: Build
@@ -28,8 +27,7 @@ stages:
     displayName: Maven Package and Publish Artifacts
     pool:
       name: Default
-
-
+    
     steps:
     - task: Maven@4
       displayName: 'Maven Package'
