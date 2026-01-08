@@ -38,9 +38,6 @@ public class Controller {
 		return "hi welcome to uthaya page...... ";
 	}
 	
-	@GetMapping("/index")
-	public String formPage() {
-	    return "index"; // forward to static file
-	}
+	
 
 }
