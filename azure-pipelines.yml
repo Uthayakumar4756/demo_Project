@@ -19,9 +19,9 @@ stages:
       displayName: Build with Maven
       inputs:
         mavenPomFile: 'pom.xml'
-        goals: 'mvn clean package -DskipTests'
+        goals: 'clean package -DskipTests'
         jdkVersionOption: '1.17'
-        publishJUnitResults: true
+        publishJUnitResults: false
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
 
     - task: CopyFiles@2
