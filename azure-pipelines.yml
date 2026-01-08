@@ -11,7 +11,8 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      vmImage: 'ubuntu-latest'
+      name: self-hosted-pool
+
 
     steps:
     - task: Maven@4
